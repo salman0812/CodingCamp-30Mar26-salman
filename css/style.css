@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  padding: 16px;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.balance-card, .form-card, .chart-card, .list-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.balance-card h2 {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+#total-balance {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d6a4f;
+}
+
+.form-card h3, .chart-card h3, .list-card h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.form-card input,
+.form-card select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+  border-color: #2d6a4f;
+}
+
+.form-card button {
+  width: 100%;
+  padding: 12px;
+  background: #2d6a4f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-card button:hover {
+  background: #1b4332;
+}
+
+#expense-chart {
+  max-width: 100%;
+}
+
+#transaction-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.transaction-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.t-name {
+  flex: 1;
+  font-weight: 600;
+}
+
+.t-category {
+  font-size: 12px;
+  background: #e8f5e9;
+  color: #2d6a4f;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.t-amount {
+  font-weight: 600;
+  color: #e63946;
+}
+
+.transaction-item button {
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.transaction-item button:hover {
+  background: #ffe0e0;
+  color: #e63946;
+}

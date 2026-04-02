@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense & Budget Visualizer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Total Balance -->
+    <div class="balance-card">
+      <h2>Total Balance</h2>
+      <p id="total-balance">Rp 0</p>
+    </div>
+
+    <!-- Input Form -->
+    <div class="form-card">
+      <h3>Add Transaction</h3>
+      <input type="text" id="item-name" placeholder="Item Name" />
+      <input type="number" id="item-amount" placeholder="Amount" />
+      <select id="item-category">
+        <option value="">-- Select Category --</option>
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Fun">Fun</option>
+      </select>
+      <button id="add-btn">Add</button>
+    </div>
+
+    <!-- Chart -->
+    <div class="chart-card">
+      <h3>Spending Chart</h3>
+      <canvas id="expense-chart"></canvas>
+    </div>
+
+    <!-- Transaction List -->
+    <div class="list-card">
+      <h3>Transactions</h3>
+      <ul id="transaction-list"></ul>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
